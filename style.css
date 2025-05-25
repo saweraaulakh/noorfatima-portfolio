@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#projects {
+    padding: 20px;
+}
+
+.project {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px gray;
+}
+.project a {
+    color: #007BFF;
+    margin-right: 10px;
+    text-decoration: none;
+}
