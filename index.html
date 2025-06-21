@@ -1,21 +1,161 @@
-cat > index.html << 'EOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noor Fatima's Portfolio</title>
+    <title>Noor Fatima | Frontend Developer</title>
+    <meta name="description" content="Portfolio of Noor Fatima, Frontend Developer">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <a href="projects/flower-shop/index.html">Flower Shop</a>
-            <a href="projects/noor-aulakh-project/noor-aulakh.html">My CV</a>
-        </nav>
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#cv"><i class="fas fa-file-alt"></i> CV</a></li>
+            <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+            <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Noor Fatima</h1>
+        <p>Frontend Developer | Creating beautiful, responsive websites</p>
     </header>
+
+    <main>
+        <!-- CV Section -->
+        <section id="cv">
+            <h2><i class="fas fa-file-alt"></i> My CV</h2>
+            <div class="card">
+                <h3>Interactive Resume</h3>
+                <p>A modern, interactive version of my professional resume</p>
+                <div class="links">
+                    <a href="projects/noor-aulakh-project/noor-aulakh.html" class="btn-primary">
+                        <i class="fas fa-eye"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/saweraaulakh/noorfatima-portfolio/tree/master/projects/noor-aulakh-project" target="_blank" class="btn-secondary">
+                        <i class="fas fa-code"></i> View Code
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2><i class="fas fa-code"></i> My Projects</h2>
+            
+            <!-- Flower Shop Project -->
+            <div class="card">
+                <h3>Flower Shop Website</h3>
+                <p>An e-commerce site for a local flower shop with product listings</p>
+                <div class="links">
+                    <a href="projects/flower-shop/index.html" class="btn-primary">
+                        <i class="fas fa-eye"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/saweraaulakh/noorfatima-portfolio/tree/master/projects/flower-shop" target="_blank" class="btn-secondary">
+                        <i class="fas fa-code"></i> View Code
+                    </a>
+                </div>
+            </div>
+            
+            <!-- My Shop Project -->
+            <div class="card">
+                <h3>My Shop</h3>
+                <p>An online store with product categories and cart functionality</p>
+                <div class="links">
+                    <a href="projects/my-shop/index.html" class="btn-primary">
+                        <i class="fas fa-eye"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/saweraaulakh/noorfatima-portfolio/tree/master/projects/my-shop" target="_blank" class="btn-secondary">
+                        <i class="fas fa-code"></i> View Code
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Perfumes Project -->
+            <div class="card">
+                <h3>Perfumes Catalog</h3>
+                <p>A responsive fragrance showcase with product details</p>
+                <div class="links">
+                    <a href="projects/perfumes/fragrance.html" class="btn-primary">
+                        <i class="fas fa-eye"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/saweraaulakh/noorfatima-portfolio/tree/master/projects/perfumes" target="_blank" class="btn-secondary">
+                        <i class="fas fa-code"></i> View Code
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2><i class="fas fa-cogs"></i> My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            <div class="card">
+                <p>Let's work together!</p>
+                <div class="contact-links">
+                    <a href="https://www.fiverr.com/s/42omeLB" target="_blank" class="btn-primary">
+                        <i class="fas fa-external-link-alt"></i> Fiverr Profile
+                    </a>
+                    <a href="mailto:saweraaulakh@gmail.com" class="btn-secondary">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Noor Fatima. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/saweraaulakh/noorfatima-portfolio" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/noor-fatima-7650a52a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/fat22855599?t=Ir41ZxqrXtH9WHf6BlqZMg&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
-EOF
